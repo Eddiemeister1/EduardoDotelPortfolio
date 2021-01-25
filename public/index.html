@@ -1,56 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Eduardo Dotel </title>
-        <link href="css/style.css" type="text/css"rel="stylesheet" >
+        <!-- Latest compiled and minified CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <!--CSS Style for the Webpage-->
+        <link href="css/style.css" type="text/css" rel="stylesheet" >
     </head>
 
     <body style="background-image: url(img/lightbluebackground.png);">
-       <div id="menu">
-           <a href="#Home">
-            Home
-           </a>
-           <a href="#AboutMe">
-            About Me
-           </a>
-           <a href="#Work">
-            Projects
-           </a>
-           <a href="#Contact">
-            Contact Me
-           </a>
-       </div>
-       <div id="Introduction" class="content"">
-        <a id="Home">
-            <h1>Eduardo Dotel</h1>
-            <br>
+       <nav style="background-color: black; color: white;"class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#Home">Eduardo Dotel</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavBar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#AboutMe">About Me</a></li>
+                    <li><a href="#Work">Projects</a></li>
+                    <li><a href="#Contact">Contact Me</a></li>
+                </ul>
+            </div> 
+        </div>
+       </nav>
+       <div id="Home" class="container-fluid">
+        <div id="Introduction" class="content"">
+                <h1>Eduardo Dotel</h1>
                 <a href="EduardoGraduateFIUResume.pdf" style="text-decoration: none;" download>
-                    <button type="resume">RESUME</button>
+                    <button type="button" class="btn btn-primary btn-block">RESUME</button>
                 </a>
-        </a>
+        </div>
        </div>
        <div id="About"class="content">
-        <a id="AboutMe">
-            <h1>About Me</h1>
-            <img id="profilePic" src= "img/eduardoprofilepic.png" height="353px" width="200px">
-            <p style="font-size: 1.7vw; margin-right: 5px;">
-                Greetings! <br>
-                I am a prospective software developer who is looking to break in the Computer science industry through 
-                entry level positions and internships. I started falling in love with programming when I was 16 during my 
-                11th grade year in high school. Since then, I honed my craft through time at the university and eventually 
-                graduated from the Honors College at Florida International University on December 2020 with a Bachelor's of 
-                Science in Computer Science.
-                <br><br>
-                The field of Computer Science is a very technical but passionate industry where the whole 
-                world is innovating and advancing significantly through it. The fact that I can be a part of this realm 
-                truly exhilirates me. Overall, I truly enjoy the process of building a technological product to existence and it's one of 
-                the reasons I am always striving to improve my skills and learn new concepts.
+            <a id="AboutMe"></a>
+            <h1 id="SectionTitle">About Me</h1>
+            <img class="img-responsive" id="profilePic" src= "img/eduardoprofilepic.png" height="317px" width="180px">
+            <p id="AboutDescription">
+            Greetings! <br>
+            I am a prospective software developer who is looking to break in the Computer science industry through 
+            entry level positions and internships. I started falling in love with programming when I was 16 during my 
+            11th grade year in high school. Since then, I honed my craft through time at the university and eventually 
+            graduated from the Honors College at Florida International University on December 2020 with a Bachelor's of 
+            Science in Computer Science.
+            <br><br>
+            The field of Computer Science is a very technical but passionate industry where the whole 
+            world is innovating and advancing significantly through it. The fact that I can be a part of this realm 
+            truly exhilirates me. Overall, I truly enjoy the process of building a technological product to existence and it's one of 
+            the reasons I am always striving to improve my skills and learn new concepts.
             </p>
-            <div style="clear: right; height: 10px;"></div>
-            <table id="Languages" border="1">
+        <div style="clear: right; height: 10px;"></div>
+        <div class="table-responsive">
+            <table id="Languages" border="1" class="table">
                 <tr>
                     <th>Languages</th>
                     <th>Tools</th>
@@ -90,11 +103,11 @@
                     </td>
                 </tr>
             </table>
-        </a>
+        </div>
        </div>
        <div id="Projects" class="content">
-           <a id="Work">
-            <h1> Projects </h1>
+           <a id="Work"></a>
+            <h1 id="SectionTitle"> Projects </h1>
                 <h2>Web Development</h2>
                     <h3>LMS App on Facebook Ver 6.0</h3>
                         <!--This image is going to be the one to open a lightbox of images-->
@@ -105,36 +118,25 @@
                         <video class="myVideo" height="150px" width="279px" controls poster="img/userguide.png">
                             <source src="videos/fiuscis2020falllmsapponfacebookuserguidevideo.mp4" type="video/mp4">
                         </video>
-                    <div id="myModal" class="modal">
+                    <div id="myModal" class="modalcss">
                         
 
                         <span class="close">&times;</span>
 
-                        <img class="modal-content" id="LMSApponFacebook">
+                        <img class="modalcss-content" id="LMSApponFacebook">
 
                         
                         <div id="caption"></div>
                     </div>
-                    <table id="PortfolioTable">
+                    <div style="clear:left"></div>
+                    <div class="table-responsive">
+                    <table id="Languages" class="table">
                         <tr>
-                            <th>Description of Project</th>
-                            <th>Languages, Tools, Frameworks Used</th>
+                            <th>Languages Used</th>
+                            <th>Tools Used</th>
+                            <th>Frameworks Used</th>
                         </tr>
                         <tr>
-                            <td>
-                                <p id="PortfolioText">
-                                    This project was worked on for my Senior project throughout the Summer and Fall of 2020.
-                                    I mainly contributed to the group feature and the StudentsSection page of the website.   
-                                    The group feature is for the purpose of dividing the students in groups for each of      
-                                    their classes. These groups would then have assignments that can help each other boost  
-                                    the number of points throughout the course. The StudentsSection page demonstrates the   
-                                    list of students in the course and the groups that they are a part of. The admin can    
-                                    see all of the groups of a course whereas the students can see their own group in a course. 
-                                    I also worked on the progression feature for courses, specifically PDFs, where students 
-                                    complete and earn points as they finish assignments. The website can be found in this 
-                                    <a href="https://lms-fiu-app.herokuapp.com/">link</a>.
-                                </p>
-                            </td>
                             <td style="width: 60%;"> 
                                 <ul>
                                     <li><img src="img/html5.png" title="HTML5" width=60px height=60px></li>
@@ -142,81 +144,110 @@
                                     <li><img src="img/sql.png" title="SQL" width=60px height=60px></li>
                                     <li><img src="img/javascript.png" title="JavaScript" width=60px height=60px></li>
                                     <li><img src="img/typescript.png" title="TypeScript" width=60px height=60px></li>
+                                </ul>
+                            </td>
+                            <td style="width: 60%">
+                                <ul>
                                     <li><img src="img/visualstudiocode.png" title="Visual Studio Code" width=60px height=60px></li>
                                     <li><img src="img/mysql-workbench-icon.png" title="MySQL" width=60px height=60px></li>
                                     <li><img src="img/postman.png" title="Postman" width=60px height=60px></li>
                                     <li><img src="img/heroku.png" title="Heroku" width=60px height=60px></li>
                                     <li><img src="img/nodejs.png" title="NodeJS" width=60px height=60px></li>
-                                    <li><img src="img/angular.png" title="Angular" width=60px height=60px></li>
                                     <li><img src="img/git.png" title="Git" width=60px height=60px></li>
                                     <li><img src="img/githubicon.png" title="GitHub" width=60px height=60px></li>
                                 </ul>
                             </td>
+                            <td style="width: 60%">
+                                <ul>
+                                    <li><img src="img/angular.png" title="Angular" width=60px height=60px></li>
+                                </ul>
+                            </td>
                         </tr>
                     </table>
+                    </div>
+                    <br>
+                    <h4>Description of Project</h4>
+                    <p id="PortfolioText">
+                        This project was worked on for my Senior project throughout the Summer and Fall of 2020.
+                        I mainly contributed to the group feature and the StudentsSection page of the website.   
+                        The group feature is for the purpose of dividing the students in groups for each of      
+                        their classes. These groups would then have assignments that can help each other boost  
+                        the number of points throughout the course. The StudentsSection page demonstrates the   
+                        list of students in the course and the groups that they are a part of. The admin can    
+                        see all of the groups of a course whereas the students can see their own group in a course. 
+                        I also worked on the progression feature for courses, specifically PDFs, where students 
+                        complete and earn points as they finish assignments. The website can be found in this 
+                        <a href="https://lms-fiu-app.herokuapp.com/">link</a>.
+                    </p>
                     <div style="clear:left"></div>
                     <br>
                     <h3>My Portfolio Website</h3>
                     <img class="myImg" src="img/portfoliowebsite.png" alt="Development of my Portfolio Website" height="200px" width="371px">
-                    <table id="PortfolioTable">
-                        <tr>
-                            <th>Description of Project</th>
-                            <th>Languages, Tools, Frameworks Used</th>
-                        </tr>
+                    <div style="clear:left"></div>
+                    <div class="table-responsive">
+                        <table id="Languages" class="table">
+                            <tr>
+                                <th>Languages Used</th>
+                                <th>Tools Used</th>
+                                <th>Frameworks Used</th>
+                            </tr>
 
-                        <tr>
-                            <td>
-                                <p id="PortfolioText">
-                                    As you can see, this project has been developed for the purpose of demonstrating my work in a more 
-                                    interactive and user-friendly manner. In order to do this, I have implemented various but common HTML
-                                    concepts that organizes the information nicely. One example of this would be the implementation of modals
-                                    in which images can expand in more detail for the benefit of the user. However, there are some features that
-                                    must definitely be improved such as the responsive design of this website. As I work on more projects, 
-                                    I plan to update this website with more content and improve the front-end layout so that my work can be better
-                                    displayed. On that note, this is currently version 1 of my portfolio website.
-                                </p>
-                            </td>
-                            <td style="width:60%">
-                                <ul>
-                                    <li><img src="img/html5.png" title="HTML5" width=60px height=60px></li>
-                                    <li><img src="img/css.png" title="CSS" width=60px height=60px></li>
-                                    <li><img src="img/javascript.png" title="JavaScript" width=60px height=60px></li>
-                                    <li><img src="img/visualstudiocode.png" title="Visual Studio Code" width=60px height=60px></li>
-                                    <li><img src="img/heroku.png" title="Heroku" width=60px height=60px></li>
-                                    <li><img src="img/git.png" title="Git" width=60px height=60px></li>
-                                    <li><img src="img/githubicon.png" title="GitHub" width=60px height=60px></li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </table>
+                            <tr>
+                                <td style="width:60%">
+                                    <ul>
+                                        <li><img src="img/html5.png" title="HTML5" width=60px height=60px></li>
+                                        <li><img src="img/css.png" title="CSS" width=60px height=60px></li>
+                                        <li><img src="img/javascript.png" title="JavaScript" width=60px height=60px></li>
+                                    </ul>
+                                </td>
+                                <td style="width:60%">
+                                    <ul>
+                                        <li><img src="img/visualstudiocode.png" title="Visual Studio Code" width=60px height=60px></li>
+                                        <li><img src="img/heroku.png" title="Heroku" width=60px height=60px></li>
+                                        <li><img src="img/git.png" title="Git" width=60px height=60px></li>
+                                        <li><img src="img/githubicon.png" title="GitHub" width=60px height=60px></li>
+                                    </ul>
+                                </td>
+                                <td style="width:60%">
+                                    <li><img src="img/bootstrap.png" title="BootStrap" width=60px height=60px></li>
+                                    <li><img src="img/express.png" title="Express.js" width=100px height=30px></li>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br>
+                    <h4>Description of Project</h4>
+                    <p id="PortfolioText">
+                        As you can see, this project has been developed for the purpose of demonstrating my work in a more 
+                        interactive and user-friendly manner. In order to do this, I have implemented various but common HTML
+                        concepts that organizes the information nicely. One example of this would be the implementation of modals
+                        in which images can expand in more detail for the benefit of the user. However, there are some features that
+                        must definitely be improved such as the responsive design of this website. As I work on more projects, 
+                        I plan to update this website with more content and improve the front-end layout so that my work can be better
+                        displayed. On that note, this is currently version 2 of my portfolio website.
+                    </p>
                     <div style="clear:left"></div>
                     <br>
-
                 <h2>Game Development</h2>
                     <h3>Unbound</h3>
                     <img class="myImg" src="img/unboundgame.png" alt="Unbound Development - First Level" height="200px" width="371px">
                     <img class="myImg" src="img/unboundmainmenu.png" alt="Unbound Main Menu Screen" height="200px" width="371px">
                     <img class="myImg" src="img/unboundgameover.png" alt="Unbound Game Over Screen" height="200px" width="371px">
-                    <table id="PortfolioTable">
+                    <div style="clear:left"></div>
+                    <div class="table-responsive">
+                    <table id="Languages" class="table">
                         <tr>
-                            <th>Description of Project</th>
-                            <th>Languages, Tools, Frameworks Used</th>
+                            <th>Languages Used</th>
+                            <th>Tools Used</th>
                         </tr>
                         <tr>
-                            <td>
-                                <p id="PortfolioText"> 
-                                    This project serves to be a personal hobby. It is a Unity first person shooter game where the player
-                                    is trying to survive from alien-like creatures in a forest. As you can see, it is still a work in progress 
-                                    but the features that have been implemented thus far include the UI, weapon swapping, enemy behavior, 
-                                    and a collision system between the enemies and the player. Me and a friend of mine have been looking to improve
-                                    this project in terms of animations, enemy variety, debugging, and level design. Our main objective at the 
-                                    moment is to complete the first level with the gameplay systems that have been and will be set in place.
-
-                                </p>
-                            </td>
                             <td style="width:60%;">
                                 <ul>
                                     <li><img src="img/c_sharp_logo.png" title="C#" width=60px height=60px></li>
+                                </ul>
+                            </td>
+                            <td style="width:60%">
+                                <ul>
                                     <li><img src="img/unity.png" title="Unity" width=60px height=60px></li>
                                     <li><img src="img/git.png" title="Git" width=60px height=60px></li>
                                     <li><img src="img/githubicon.png" title="GitHub" width=60px height=60px></li>
@@ -224,6 +255,19 @@
                             </td>
                         </tr>
                     </table>
+                    </div>
+                    <br>
+                    <h4>Description of Project</h4>
+                    <p id="PortfolioText">
+                        This project serves to be a personal hobby. It is a Unity first person shooter game 
+                        where the player is trying to survive from alien-like creatures in a forest. As you 
+                        can see, it is still a work in progress but the features that have been implemented 
+                        thus far include the UI, weapon swapping, enemy behavior, and a collision system 
+                        between the enemies and the player. Me and a friend of mine have been looking to 
+                        improve this project in terms of animations, enemy variety, debugging, and level 
+                        design. Our main objective at the moment is to complete the first level with the 
+                        gameplay systems that have been and will be set in place.
+                    </p>
                     <div style="clear:left"></div>
                     <br>
                     <h3>Kimodameshi</h3>
@@ -231,25 +275,21 @@
                         <source src="videos/kimodameshi.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                     </video>
-                    <table id="PortfolioTable">
+                    <div style="clear:left"></div>
+                    <div class="table-responsive">
+                    <table id="Languages" class="table">
                         <tr>
-                            <th>Description of Project</th>
-                            <th>Languages, Tools, Frameworks Used</th>
+                            <th>Languages Used</th>
+                            <th>Tools Used </th>
                         </tr>
                         <tr>
-                            <td>
-                                <p id="PortfolioText">
-                                    This project was part of the Upsilon Pi Epsilon SparkDev program during the Spring 2020 semester.
-                                    Our goal throughout that semester was to continue the development process of this project which
-                                    was set out for us by the team from the previous semester. I specifically worked on the UI and object
-                                    pickup behavior. Both of these systems are in place to notify the player of its current status in the
-                                    story and their own survivability. Shown above is a video that was presented during the Spring 2020 SparkDev
-                                    Virtual Showcase where it demonstrates the game at its final state.
-                                </p> 
-                            </td>
                             <td style="width:60%;">
                                 <ul>
                                     <li><img src="img/c_sharp_logo.png" title="C#" width=60px height=60px></li>
+                                </ul>
+                            </td>
+                            <td style="width:60%">
+                                <ul>
                                     <li><img src="img/unity.png" title="Unity" width=60px height=60px></li>
                                     <li><img src="img/git.png" title="Git" width=60px height=60px></li>
                                     <li><img src="img/githubicon.png" title="GitHub" width=60px height=60px></li>
@@ -257,13 +297,23 @@
                             </td>
                         </tr>
                     </table>
+                    </div>
+                    <br>
+                    <h4>Description of Project</h4>
+                    <p id="PortfolioText">
+                        This project was part of the Upsilon Pi Epsilon SparkDev program during the Spring 2020 semester.
+                        Our goal throughout that semester was to continue the development process of this project which
+                        was set out for us by the team from the previous semester. I specifically worked on the UI and object
+                        pickup behavior. Both of these systems are in place to notify the player of its current status in the
+                        story and their own survivability. Shown above is a video that was presented during the Spring 2020 SparkDev
+                        Virtual Showcase where it demonstrates the game at its final state.
+                    </p> 
                     <div style="clear:left"></div>
                     <br>
-           </a>
        </div>
        <br>
        <div id="ContactMe" class="content">
-           <a id="Contact">
+           <a id="Contact"></a>
             <h1> Contact Me </h1>
             <table class="ContactLinks">
                 <tr>
@@ -279,25 +329,9 @@
                     </th>
                 </tr>
             </table>
-           </a>
            <p>This website was created from scratch by Eduardo Dotel using HTML, CSS, NodeJs, and Visual Studio Code. It was deployed through Heroku.
-            This website looks best on computers. Mobile responsive design for this website is going to be improved.
            </p>
        </div>
-       <script>
-        window.onscroll = function() {myFunction()};
-        
-        var navbar = document.getElementById("menu");
-        var sticky = navbar.offsetTop;
-        
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
-        </script>
     <script>
     // Get the modal
     var modal = document.getElementById("myModal");

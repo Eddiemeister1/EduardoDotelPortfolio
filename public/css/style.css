@@ -1,7 +1,11 @@
 body {
   color: white;
   margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;  
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 65px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #menu {
@@ -35,6 +39,10 @@ body {
 .sticky + .content {
     padding-top: 60px;
 }
+
+#horizontalmenu {
+    float: left;
+}
 #Introduction { 
     margin: auto;
     max-width: 100%;
@@ -52,7 +60,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
     text-align: center;
     font-size: 40px;
     padding: 15px 30px;
@@ -65,7 +73,6 @@ body {
 
 
 #profilePic {
-    float: right;
     border-radius: 2px;
     display: block;
     line-height: 10px;
@@ -81,6 +88,8 @@ body {
 #Languages{
     border: 5px solid black;
     padding: 10px;
+    padding-top: 15px;
+    margin-top: 8px;
     width: 100%;
     border-collapse: collapse;
 }
@@ -101,7 +110,38 @@ body {
     text-align: center;
 }
 
+#AboutDescription {
+    margin-right: 10px;
+}
 
+@media (min-width: 501px){
+    #AboutDescription {
+        font-size: 22px;
+    }
+
+    #profilePic {
+        float: right;
+    }
+}
+
+@media (max-width: 500px){
+    #SectionTitle {
+        text-align: center;
+    }
+
+    #AboutDescription {
+        font-size: 18px;
+    }
+
+    #profilePic {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #PortfolioText {
+        font-size: 16px;
+    }
+}
 .myImg {
     border-radius: 5px;
     cursor: pointer;
@@ -125,10 +165,10 @@ body {
   .myImg:hover {opacity: 0.7;}
   
 
-  .modal {
+  .modalcss {
     display: none; 
     position: fixed; 
-    z-index: 1; 
+    z-index: 10000000; 
     padding-top: 100px; 
     left: 0;
     top: 0;
@@ -140,7 +180,7 @@ body {
   }
   
 
-  .modal-content {
+  .modalcss-content {
     margin: auto;
     display: block;
     width: 80%;
@@ -159,7 +199,7 @@ body {
     height: 150px;
   }
   
-  .modal-content, #caption {
+  .modalcss-content, #caption {
     animation-name: zoom;
     animation-duration: 0.6s;
   }
@@ -178,6 +218,7 @@ body {
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
+
   }
   
   .close:hover,
@@ -188,7 +229,7 @@ body {
   }
   
   @media only screen and (max-width: 700px){
-    .modal-content {
+    .modalcss-content {
       width: 100%;
     }
   }
@@ -218,9 +259,6 @@ body {
     width: 100%;
 }
 
-li {
-    list-style-type: circle;
-}
 
 
 
@@ -230,15 +268,17 @@ li {
 
 #PortfolioText {
     display: inline-block;
-    font-size: 1.1vw;
-}
-#PortfolioTable {
-    float: left;
-    padding-left: 10px;
-    margin-top: 10px;
-    table-layout: fixed;
 }
 
+#PortfolioTable {
+    float:left;
+    padding-left: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+#PortfolioColumn {
+    width: 100%;
+}
 #PortfolioTable li {
     float: left;
     width: 150px;
